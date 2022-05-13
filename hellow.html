@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--meta tags para SEO -->
+
+    <meta name="author" content="Nelson Mello">
+    <meta name="description" content="revisao de html">
+    <meta name="robots" content="noindex, nofollow"> <!--nofollow / follow segue os links da pagiana-->
+
+    <!--meta para redes sociais / opengraph: facebook-->
+
+    <meta property="og:site_name" content="Revisao HTML" >
+    <meta property="og:url" content="http://revisao.html.com">
+    <meta property="og:title" content="Um site Nelson Mello" >
+    <meta property="og:description" content="Aqui vai uma descricao para o robo do facebook">
+    <meta property="og:image" content="https://caminho disponibilizado no facebook" >
+
+    <!--Twitter-->
+
+    <meta name="twitter:card" content="summary">
+    <meta neme="twitter:title" content="Um site">
+
+    <!-- como colocar o favcon -->
+
+    <link rel="icon" href=""/>
+
+    <!-- importado css -->
+    <link rel="stylesheet" href="./css/maincss.css">
+    
+    <title>Document</title>
+</head>
+
+
+
+<!-- revisao html rapida -->
+
+<body>
+
+    <!-- 
+        ATRIBUTOS GLOBAIS
+        
+        contenteditable="true": permite edição direta 
+        tabindex="1" ordem dos elementos utilizando o tab
+        title="titulo" caixinha que aparece quando deixa o mouse em cima
+
+        CARACTERES RESERVADOS
+
+        se for usar por exemplo o ">" pra aparecer no texto, utilizar &gt
+        lista completa: https://developer.mozilla.org/en-US/docs/Glossary/Entity
+
+        CITACOES
+
+        <blockquote cite="www.w3.org/Protocols/">Citacao do meu texto</blockquote>
+
+
+    -->
+
+    <div class="input-container" contenteditable="true" id="inputsTeste">
+
+        <h1>What is lorem ipsum?</h1>
+
+        <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <a href="https://www.lipsum.com/">Read More</a>
+    </div>
+
+<!--listas -->
+    <div class="listas" id="listas">
+
+        <h1>Listas de mercado:</h1>
+
+        <ul>
+            <li>repolho</li>
+            <li>Leite</li>
+            <li>Macarrao</li>
+            <li>Cerveja</li>
+            <li>Carne</li>
+        </ul>
+
+    </div>
+
+<!-- abreviacoes: apenas descansar o mouse em cima-->
+
+    <div class="abbreviacoes" id="abbreviacoes">
+        <p>Usamos<abbr title="Hypertext Transfer"> HT</abbr> para estruturar o documento</p>
+    </div>
+
+<!-- detalhes de contato: usado para especificar quem fez a pagina html-->
+
+    <div class="adress" id="adress">
+        <address>
+            <p>Nelson Mello<br><strong>Porto Alegre - RS </strong></p>
+            
+        </address>
+    </div>
+
+<!--Listas de descricao: Marcar um conjunto de itens e suas descricoes-->
+
+    <div class="listasDescricao" id="listasDescricao">  
+        <dl>
+            <dt>teste</dt>
+            <dd>é um teste kekw</dd>
+            <dt>teste2</dt>
+            <dd>é um segundo teste kekw</dd>
+        </dl>
+
+    </div>
+
+<!-- Representacao de bloco de codigos 
+
+    <code> para partes genericas de codigos (Não vai pegar quebras de linha)
+    <pre>para blocos grandes de codigo (pega examente como o código esta no visual, inclusive formatacao da identacao)
+    OBS: se for representar HTML, precisa utilizar os caracteres especiais iguais
+-->
+
+    <code>document.queryselector();</code> 
+
+    <pre>
+        <code>
+            document.querySelector();
+            if (document.querySelect){
+                print();
+            }
+        </code>
+    </pre>
+
+<!--propriedades href
+
+    -Target
+
+    target="_blank" : abre uma nova aba quando clicar no link 
+    target="_self" : abre a página na mesma guia
+
+    <a href="http://google.com/search" target="_blank"></a
+    <a href="http://google.com/search" target="_self"></a>
+
+
+    -Ancoras
+
+    <a href="#about"></a>
+    #about = id atribuido na tag
+
+
+
+
+-->
+
+    <h1>Brincando com links</h1>
+
+    <ul>
+        <li><a href="http://google.com/search" target="_blank">Google</a></li>
+        <li><a href="mailto:nelson.melloo@hotmail.com">Email</a></li>
+        <li><a href="tel:+5591995295044">Telefone</a></li>
+    </ul>
+
+    <a href="#inputsTeste">Voltar Inicio</a> <!--está voltando para o incicio -->
+
+    <!-- Teste com box model no css -->
+
+    <div class="box-model">
+        <p>teste de box - model</p>
+
+    </div>
+
+    <!-- 
+        *utlizando videos*
+
+        <video src="" controls width="" height="" autoplay preload="auto ou metadata ou none" loop muted(se comecao ou nao mutado) poster="./icon.png" (imagem de fundo até inciciar o vidoe)>
+           
+            e se o browser não funcionar?
+
+            <source src="" type="video/mp4" controls></source> solucao 2
+            <p>Esse vídeo não suporta o seu vídeo</p> Solucao 1
+        </video>
+
+        *utlizando audios*
+
+        <audio controls (funciona da mesma forma que o video, pesquisar documentacao caso for usar)>
+
+        </audio>
+
+        *iframe*
+
+
+    -->
+
+    <!-- Colocando imagens e fazendo referências com html semanticamente -->
+
+    <figure>
+        
+        <img src="https://source.unsplash.com/random" alt="random" title="Random" height="200px" width="50%">
+        <figcaption>Referências da imagem</figcaption>
+    
+    </figure>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
