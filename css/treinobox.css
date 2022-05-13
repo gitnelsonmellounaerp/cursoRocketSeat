@@ -1,0 +1,29 @@
+*{
+    margin: 0 auto;
+}
+body{
+    min-height:100vh;
+    display:flex;
+}
+img{
+    width: 30%;
+    height: auto;
+}
+
+.gallery{
+    display:flex;
+    flex-wrap: wrap; /*pra quebrar a linha*/
+    gap: .9rem;
+    justify-content: center;
+}
+
+footer{
+    margin-top: auto;
+    background-color: gray;
+    color: white;
+    height: 8rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,81 @@
+.right {
+    float: right;
+}
+
+.left, .flexbox {
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.box{
+    
+    border: 1px solid black;
+    width: 200px;
+    
+}
+
+/*Propriedades flex
+
+    flex-direction: row; (padrão)
+    flex-direction: column; (Coloca os itens no eixo y)
+    flex-direction: column - reverse; ( Inveter os itens no eixo y)
+    flex-wrap: wrap; (Encara cada item como um novo eixo x, somente se for necessario)
+
+
+
+*/
+*{
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    color: white;
+    background-color: black;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+    align-items: center;
+
+    
+}
+
+ul li a:hover{
+    font-weight: bold;
+    
+    
+}
+
+.container{
+    display: flex;
+    gap: 1rem;
+}
+
+aside, .dir{
+    border: 1px solid black;
+    height: 95vh;
+    
+}
+
+aside{
+    flex-basis: 25%;
+}
+
+.dir{
+    flex: 1;
+}
