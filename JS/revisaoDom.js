@@ -29,4 +29,24 @@ alteraTexto.textContent += ' olá mundo'; //altera no html visivel (+= concatena
 console.log(alteraTexto);
 
 
-//
+// manipulacao de atributos setAtribute('id', 'valueOfAtribute',)
+
+const colocaId = document.querySelector('.teste');
+colocaId.setAttribute("id", "teste");
+const divID = document.querySelector('#teste')
+console.log(divID);
+
+colocaId.removeAttribute("id"); // remove o atributo 
+
+// alterando atributos com style
+
+const selectorBody = document.querySelector('body');
+console.log(selectorBody.parentNode); // pega o elemento pai (ou seja o html) - pode ser também parentElement
+selectorBody.style.backgroundColor = "grey";
+
+
+//css com classList (ele pega uma classe css e adiciona na tag) - pode adicionar mais de uma 
+
+const classListTest = document.querySelector('h2');
+classListTest.classList.add("classList");
+classListTest.classList.toggle("classList"); //toggle se as classe existir, ele tira, se não existir ele coloca
