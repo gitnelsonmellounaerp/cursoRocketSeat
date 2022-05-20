@@ -1,0 +1,19 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Aprendendo Node",
+  "main": "mainNode.js",
+  "scripts": {
+    "test": "node mainNode.js"
+  },
+  "keywords": [
+    "learning",
+    "nodejs"
+  ],
+  "author": "Nelson Mello",
+  "license": "MIT",
+  "dependencies": {
+    "cfonts": "^2.10.1",
+    "moment": "^2.29.3"
+  }
+}
